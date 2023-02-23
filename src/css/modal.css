@@ -142,11 +142,17 @@ body.modal-open {
   margin-left: 27px;
 }
 
+@media screen and (max-width: 413px) {
+  .modal-form-button {
+    width: 290px;
+  }
+}
+
 .modal-form-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 290px;
   height: 64px;
   font-style: normal;
   font-weight: 500;
@@ -164,6 +170,7 @@ body.modal-open {
   letter-spacing: 0.02px;
   cursor: pointer;
 }
+
 .modal-form-button:hover {
   background-color: #f3c653;
   border: 2px solid #ffffff;
@@ -334,7 +341,7 @@ body.modal-open {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 300px;
+  min-width: 290px;
   height: 64px;
   padding: 20px 10px;
 

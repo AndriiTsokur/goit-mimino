@@ -23,6 +23,7 @@
 }
 
 .contacts-text {
+  min-width: 115px;
   font-family: 'Montserrat-Medium', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -30,6 +31,7 @@
   letter-spacing: 0.02em;
   color: #c79002;
 }
+
 .contacts-text-link {
   font-family: 'Montserrat-Regular', sans-serif;
   font-weight: 400;
@@ -47,11 +49,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.rest-tel{
+.rest-tel {
   margin-left: 22px;
 }
-.contacts-text-link:hover{
-  border: 0.5px solid #c79002; 
+.contacts-text-link:hover {
+  border: 0.5px solid #c79002;
 }
 
 .contacts-icon {
@@ -73,28 +75,50 @@
   gap: 8px;
 }
 .hotel-tel {
-  margin-left: 54px;
+  margin-left: 22px;
 }
 .two-tel {
   display: flex;
   flex-direction: column;
+  column-gap: 16px;
+  /* width: 264px; */
 }
 .contacts-link-hotel-tel {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 8px;
 }
-.contacts-link-hotel-tel:not(:last-child) {
+/* .contacts-link-hotel-tel:not(:last-child) {
   margin-right: 7px;
-}
+} */
 .contacts-item {
   display: flex;
   align-items: center;
 }
+
 .contacts-item:not(:last-child) {
   margin-bottom: 16px;
 }
+
+.contacts-item:last-child {
+  justify-content: flex-end;
+}
+
+.contacts-address {
+  width: 247px;
+}
+
+@media screen and (max-width: 413px) {
+  .contacts-item {
+    justify-content: space-between;
+  }
+
+  .contacts-address {
+    width: 100%;
+  }
+}
+
 .contacts-address-link {
   font-family: 'Montserrat-Regular', sans-serif;
   font-weight: 400;
@@ -108,7 +132,7 @@
   padding-bottom: 7px;
   border: 0.5px solid #f3c653;
   border-radius: 2px;
-  margin-left: 124px;
+  /* margin-left: 124px; */
   margin-bottom: 32px;
   transition-property: border;
   transition-duration: 250ms;
@@ -119,8 +143,8 @@
   align-items: center;
   gap: 8px;
 }
-.contacts-address-link:hover{
-  border: 0.5px solid #c79002; 
+.contacts-address-link:hover {
+  border: 0.5px solid #c79002;
 }
 
 .map {
@@ -139,9 +163,9 @@
   .container {
     width: 414px;
   }
-  .two-tel {
+  /* .two-tel {
     flex-direction: row;
-  }
+  } */
   .hotel-icon {
     margin-bottom: 0px;
   }
@@ -160,6 +184,19 @@
   .container {
     width: 960px;
   }
+
+  .two-tel {
+    flex-direction: row;
+    width: 264px;
+  }
+
+  .contacts-link-hotel-tel {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* gap: 8px; */
+  }
+
   .contacts {
     padding-top: 56px;
     padding-bottom: 40px;
