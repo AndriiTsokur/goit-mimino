@@ -922,11 +922,12 @@
 }
 
 .room-modal-btn {
+  width: 236px;
   font-family: 'Montserrat-Bold', sans-serif;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  padding: 14px 35px;
+  padding: 12px 35px;
   color: #f3c653;
   outline: none;
   border: 2px solid #ffffff;

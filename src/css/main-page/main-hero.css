@@ -120,6 +120,8 @@
 }
 
 .hero-btn {
+  width: 236px;
+  text-align: center;
   font-family: 'Montserrat-Bold', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -269,7 +271,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/img/main-page/homepage__bg-hero--desktop.jpg');
     max-width: 1280px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
   }
 
   .hero-soc-content {
